@@ -1,0 +1,19 @@
+{
+  "name": "pokedex-app",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil App Starter",
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "dependencies": {
+    "@stencil/core": "^0.16.2",
+    "@stencil/router": "~0.3.1",
+    "@stencil/sass": "^0.1.1",
+    "feather-icons": "^4.10.0"
+  },
+  "license": "MIT"
+}

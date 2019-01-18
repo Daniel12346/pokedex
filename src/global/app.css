@@ -1,0 +1,137 @@
+/*
+  Global App CSS
+  ----------------------
+  Use this file for styles that should be applied to all components.
+  For example, "font-family" within the "body" selector is a CSS property
+  most apps will want applied to all components.
+
+  Any global CSS variables should also be applied here.
+*/
+
+html,
+:host {
+  box-sizing: border-box;
+  background: whitesmoke;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica, sans-serif; /*-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+}
+
+:root {
+  --color-primary-1: hsla(339, 75%, 88%, 1);
+  --color-primary-2: hsla(342, 84%, 77%, 1);
+  --color-primary-3: hsla(345, 85%, 61%, 1);
+  --color-primary-4: hsla(347, 88%, 52%, 1);
+  --color-primary-5: hsla(350, 98%, 45%, 1);
+  --color-primary-6: hsla(352, 92%, 38%, 1);
+  --color-primary-7: hsla(357, 88%, 28%, 1);
+  --color-primary-8: hsla(358, 80%, 17%, 1);
+  --color-primary-9: hsla(360, 60%, 8%, 1);
+
+  --color-secondary-1: hsla(210, 90%, 88%, 1);
+  --color-secondary-2: hsla(206, 94%, 77%, 1);
+  --color-secondary-3: hsla(202, 85%, 63%, 1);
+  --color-secondary-4: hsla(209, 89%, 56%, 1);
+  --color-secondary-5: hsla(212, 100%, 50%, 1);
+  --color-secondary-6: hsla(215, 94%, 42%, 1);
+  --color-secondary-7: hsla(222, 88%, 28%, 1);
+  --color-secondary-8: hsla(225, 75%, 15%, 1);
+  --color-secondary-9: hsla(220, 60%, 9%, 1);
+
+  --color-accent-1: hsla(70, 88%, 85%, 1);
+  --color-accent-2: hsla(80, 94%, 80%, 1);
+  --color-accent-3: hsla(93, 97%, 70%, 1);
+  --color-accent-4: hsla(107, 100%, 60%, 1);
+  --color-accent-5: hsla(120, 100%, 50%, 1);
+  --color-accent-6: hsla(122, 96%, 40%, 1);
+  --color-accent-7: hsla(125, 80%, 32%, 1);
+  --color-accent-8: hsla(129, 65%, 22%, 1);
+  --color-accent-9: hsla(133, 56%, 15%, 1);
+
+  --color-grey-w1: hsla(40, 14%, 30%, 1);
+  --color-grey-w2: hsla(41, 15%, 38%, 1);
+  --color-grey-w3: hsla(44, 16%, 45%, 1);
+  --color-grey-w4: hsla(48, 15%, 54%, 1);
+  --color-grey-w5: hsla(53, 14%, 60%, 1);
+
+  --color-grey-n1: hsla(0, 0%, 24%, 1);
+  --color-grey-n2: hsla(0, 0%, 32%, 1);
+  --color-grey-n3: hsla(0, 0%, 39%, 1);
+  --color-grey-n4: hsla(0, 0%, 53%, 1);
+  --color-grey-n5: hsla(0, 0%, 62%, 1);
+
+  --color-bg-1: hsla(300, 90%, 85%, 0.16);
+
+  --color-white-1: hsla(30, 20, 97%, 1);
+  --color-white-2: hsla(0, 10, 92%, 1);
+  --color-white-3: hsla(0, 20, 92%, 1);
+  --color-white-4: hsla(0, 30, 92%, 1);
+
+  --color-grey-w1: hsla(43, 10%, 85%, 1);
+  --color-grey-w2: hsla(41, 9%, 75%, 1);
+  --color-grey-w3: hsla(44, 7%, 60%, 1);
+  --color-grey-w4: hsla(48, 9%, 44%, 1);
+  --color-grey-w5: hsla(44, 9%, 30%, 1);
+
+  --color-grey-n1: hsla(0, 0%, 69%, 1);
+  --color-grey-n2: hsla(0, 0%, 57%, 1);
+  --color-grey-n3: hsla(0, 0%, 43%, 1);
+  --color-grey-n4: hsla(0, 0%, 33%, 1);
+  --color-grey-n5: hsla(0, 0%, 24%, 1);
+
+  --color-grass: mediumseagreen;
+  --color-fire: orangered;
+  --color-water: aqua;
+  --color-normal: grey;
+  --color-poison: darkmagenta;
+  --color-psychic: palevioletred;
+  --color-rock: burlywood;
+  --color-ground: lightgoldenrodyellow;
+  --color-ice: lightblue;
+  --color-ghost: slateblue;
+  --color-bug: olivedrab;
+  --color-dark: saddlebrown;
+  --color-fighting: firebrick;
+  --color-dragon: mediumslateblue;
+  --color-steel: lightsteelblue;
+  --color-flying: lightskyblue;
+  --color-electric: yellow;
+  --color-fairy: pink;
+
+  --color-stat-hp: darkred;
+  --color-stat-attack: brown;
+  --color-stat-defense: goldenrod;
+  --color-stat-special-attack: steelblue;
+  --color-stat-special-defense: seagreen;
+  --color-stat-speed: mediumvioletred;
+
+  --color-primary-8: hsla(358, 80%, 17%, 1);
+  --color-primary-9: hsla(360, 60%, 8%, 1);
+
+  --color-secondary-1: hsla(210, 90%, 88%, 1);
+  --color-secondary-2: hsla(206, 94%, 77%, 1);
+  --color-secondary-3: hsla(202, 85%, 63%, 1);
+  --color-secondary-4: hsla(209, 89%, 56%, 1);
+  --color-secondary-5: hsla(212, 100%, 50%, 1);
+  --color-secondary-6: hsla(215, 94%, 42%, 1);
+  --color-secondary-7: hsla(222, 88%, 28%, 1);
+  --color-secondary-8: hsla(225, 75%, 15%, 1);
+  --color-secondary-9: hsla(220, 60%, 9%, 1);
+
+  --box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
+  --box-shadow-light: 0 0.4rem 1rem rgba(255, 255, 255, 0.25);
+}

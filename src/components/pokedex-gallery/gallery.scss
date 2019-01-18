@@ -1,0 +1,39 @@
+:host {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 25vh;
+  width: 95vw;
+  max-width: 600px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.gallery {
+  /*TODO: style background depending on pokemon type
+  height: 95%;
+  */
+  width: 80%;
+  max-width: 300px;
+
+  background-color: var(--color-accent-8);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row nowrap;
+  border-radius: 5px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+
+  overflow: -moz-scrollbars-none;
+  img {
+    display: flex;
+    flex: 1 0 100%;
+  }
+}

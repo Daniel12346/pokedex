@@ -1,0 +1,37 @@
+:host {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.header {
+  flex-basis: 100%;
+}
+.nav {
+  height: 15vh;
+  display: flex;
+  background: var(--color-primary-x, rgba(0, 0, 0, 0.26));
+  clip-path: polygon(0 0, 0 100%, 35% 100%, 45% 62%, 100% 62%, 100% 0);
+  z-index: 1;
+  border-radius: 10px;
+  position: relative;
+  top: 9px;
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    clip-path: inherit;
+    height: inherit;
+    top: -8px;
+    left: 0;
+    background-color: var(--color-primary-5);
+    z-index: -1;
+    border-radius: 10px;
+  }
+}

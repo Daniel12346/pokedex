@@ -1,0 +1,47 @@
+:host {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  min-height: 20px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+button {
+  background-color: var(--color-primary-5);
+  padding: 10px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+
+.list-controls {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 1rem;
+}
+input {
+  width: 70%;
+  color: white;
+  font-size: 1rem;
+  background: var(--color-primary-5);
+  padding: 0.2rem;
+  border: 0.2px solid var(--color-grey-w2);
+  border-radius: 10px;
+  height: 2rem;
+  box-shadow: var(--box-shadow);
+  &:hover,
+  &:active {
+    box-shadow: var(--box-shadow-light);
+  }
+}
