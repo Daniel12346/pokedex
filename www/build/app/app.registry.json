@@ -1,0 +1,70 @@
+{
+  "namespace": "App",
+  "fsNamespace": "app",
+  "loader": "../app.js",
+  "global": "app.global.js",
+  "core": "app.v4gfsqkq.js",
+  "corePolyfilled": "app.ioi7bpck.js",
+  "components": {
+    "app-root": {
+      "bundleIds": {
+        "$": "ajlqh2n5"
+      },
+      "encapsulation": "shadow"
+    },
+    "dv-gallery": {
+      "bundleIds": {
+        "$": "vwz3heho"
+      },
+      "encapsulation": "shadow"
+    },
+    "dv-header": {
+      "bundleIds": {
+        "$": "ajlqh2n5"
+      },
+      "encapsulation": "shadow"
+    },
+    "dv-load-more": {
+      "bundleIds": {
+        "$": "rv2yjezf"
+      },
+      "encapsulation": "shadow"
+    },
+    "dv-pokedex-display": {
+      "bundleIds": {
+        "$": "vwz3heho"
+      },
+      "encapsulation": "shadow"
+    },
+    "dv-pokedex-page": {
+      "bundleIds": {
+        "$": "vwz3heho"
+      },
+      "encapsulation": "shadow"
+    },
+    "dv-pokemon-info": {
+      "bundleIds": {
+        "$": "vwz3heho"
+      },
+      "encapsulation": "shadow"
+    },
+    "dv-pokemon-list": {
+      "bundleIds": {
+        "$": "qxqwslap"
+      },
+      "encapsulation": "shadow"
+    },
+    "dv-pokemon-list-controls": {
+      "bundleIds": {
+        "$": "qxqwslap"
+      },
+      "encapsulation": "shadow"
+    },
+    "dv-pokemon-moves": {
+      "bundleIds": {
+        "$": "xef0aaf3"
+      },
+      "encapsulation": "shadow"
+    }
+  }
+}

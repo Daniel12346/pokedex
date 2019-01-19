@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Stencil Starter App</title>
+    <meta
+      name="Description"
+      content="Welcome to the Stencil App Starter. You can use this starter to build entire apps all with web components using Stencil!"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <meta name="theme-color" content="#16161d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <link href="/build/app.css" rel="stylesheet" />
+    <script data-resources-url="/build/app/">
+      !(function(e, t, r, n, o, s, i, p, a, c, d, l, u, m) {
+        for (
+          d = e.App = e.App || {},
+            (l = t.createElement("style")).innerHTML =
+              a + "{visibility:hidden}.hydrated{visibility:inherit}",
+            l.setAttribute("data-styles", ""),
+            u = t.head.querySelector("meta[charset]"),
+            t.head.insertBefore(l, u ? u.nextSibling : t.head.firstChild),
+            (function(e, t, r) {
+              (e["s-apps"] = e["s-apps"] || []).push("App"),
+                r.componentOnReady ||
+                  (r.componentOnReady = function() {
+                    var t = this;
+                    function r(r) {
+                      if (t.nodeName.indexOf("-") > 0) {
+                        for (
+                          var n = e["s-apps"], o = 0, s = 0;
+                          s < n.length;
+                          s++
+                        )
+                          if (e[n[s]].componentOnReady) {
+                            if (e[n[s]].componentOnReady(t, r)) return;
+                            o++;
+                          }
+                        if (o < n.length)
+                          return void (e["s-cr"] = e["s-cr"] || []).push([
+                            t,
+                            r
+                          ]);
+                      }
+                      r(null);
+                    }
+                    return e.Promise ? new e.Promise(r) : { then: r };
+                  });
+            })(e, 0, c),
+            o = o || d.resourcesUrl,
+            l = (u = t.querySelectorAll("script")).length - 1;
+          l >= 0 && !(m = u[l]).src && !m.hasAttribute("data-resources-url");
+          l--
+        );
+        (u = m.getAttribute("data-resources-url")),
+          !o && u && (o = u),
+          !o &&
+            m.src &&
+            (o =
+              (u = m.src.split("/").slice(0, -1)).join("/") +
+              (u.length ? "/" : "") +
+              "app/"),
+          (l = t.createElement("script")),
+          (function(e, t, r, n) {
+            return (
+              !(t.search.indexOf("core=esm") > 0) &&
+              (!(
+                !(t.search.indexOf("core=es5") > 0 || "file:" === t.protocol) &&
+                e.customElements &&
+                e.customElements.define &&
+                e.fetch &&
+                e.CSS &&
+                e.CSS.supports &&
+                e.CSS.supports("color", "var(--c)") &&
+                "noModule" in r
+              ) ||
+                (function(e) {
+                  try {
+                    return new Function('import("")'), !1;
+                  } catch (e) {}
+                  return !0;
+                })())
+            );
+          })(e, e.location, l)
+            ? (l.src = o + "app.ioi7bpck.js")
+            : ((l.src = o + "app.v4gfsqkq.js"),
+              l.setAttribute("type", "module"),
+              l.setAttribute("crossorigin", !0)),
+          l.setAttribute("data-resources-url", o),
+          l.setAttribute("data-namespace", "app"),
+          t.head.appendChild(l);
+      })(
+        window,
+        document,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        "app-root,dv-gallery,dv-header,dv-load-more,dv-pokedex-display,dv-pokedex-page,dv-pokemon-info,dv-pokemon-list,dv-pokemon-list-controls,dv-pokemon-moves",
+        HTMLElement.prototype
+      );
+    </script>
+    <link rel="apple-touch-icon" href="/assets/icon/icon.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body>
+    <app-root></app-root>
+    <script></script>
+    <script data-build="2019-01-19T23:24:45">
+      "serviceWorker" in navigator &&
+        "file:" !== location.protocol &&
+        window.addEventListener("load", function() {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then(function(n) {
+              n.onupdatefound = function() {
+                var e = n.installing;
+                e.onstatechange = function() {
+                  "installed" === e.state &&
+                    window.dispatchEvent(new Event("swUpdate"));
+                };
+              };
+            })
+            .catch(function(n) {
+              console.error("service worker error", n);
+            });
+        });
+    </script>
+  </body>
+</html>
